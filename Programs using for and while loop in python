@@ -1,0 +1,610 @@
+# Programs on Loops (I)
+
+## Exercise 1
+
+**Print numbers from 1 to 10**
+
+# Write your code here using while loop
+i=1
+while (i<=10):
+    print(i, end = ' ')
+    i=i+1
+
+# Write your code here using for loop
+for i in range(1,11):
+    print(i)
+
+# Write your code here using for loop
+for i in range(1,11,1):
+    print(i, end = ' ')
+    
+
+## Exercise 2
+
+**Print the numbers from 10 to 1**
+
+# Write your code here using while loop
+i=10
+while(i>=1):
+    print(i, end = ' ')
+    i=i-1
+
+# Write your code here using for loop
+for i in range(10,0,-1):
+    print(i, end = ' ')
+
+## Exercise 3
+
+**You will be given two values A and B respectively. Print the numbers from A to B (Both inclusive)**
+
+- It is guaranteed that $ A \leq B $
+
+**Sample I/O**  
+
+***Input1:***  
+10 20  
+***Output1:***  
+10 11 12 13 14 15 16 17 18 19 20  
+
+***Input2:***  
+23 31  
+***Output2:***  
+23 24 25 26 27 28 29 30 31
+
+***Input3:***  
+1236 1347  
+***Output3:***  
+1236 1237 1238 1239 1240 1241 1242 1243 1244 1245 1246 1247 1248 1249 1250 1251 1252 1253 1254 1255 1256 1257 1258 1259 1260 1261 1262 1263 1264 1265 1266 1267 1268 1269 1270 1271 1272 1273 1274 1275 1276 1277 1278 1279 1280 1281 1282 1283 1284 1285 1286 1287 1288 1289 1290 1291 1292 1293 1294 1295 1296 1297 1298 1299 1300 1301 1302 1303 1304 1305 1306 1307 1308 1309 1310 1311 1312 1313 1314 1315 1316 1317 1318 1319 1320 1321 1322 1323 1324 1325 1326 1327 1328 1329 1330 1331 1332 1333 1334 1335 1336 1337 1338 1339 1340 1341 1342 1343 1344 1345 1346 1347  
+
+***Input3:***  
+231 231  
+***Output3:***  
+231
+
+# Write your code here using while loop
+a,b=map(int,input().split())
+i=a
+while(i<=b):
+    print(i, end=' ')
+    i=i+1
+
+# Write your code here using for loop
+a,b=map(int,input().split())
+for i in range(a,b+1):
+    print(i, end=' ')
+
+# Write your code here using for loop
+
+## Exercise 4
+
+**You will be given two values A and B respectively. Print all thenumbers from B to A (Both inclusive)**
+
+- It is guaranteed that $B \geq A$.
+
+**Sample I/O**  
+
+***Input1:***  
+1 10  
+***Output1:***  
+10 9 8 7 6 5 4 3 2 1  
+
+***Input2:***  
+17 23  
+***Output2:***  
+23 22 21 20 19 18 16 17  
+
+***Input3:***  
+123
+231  
+***Output3:***  
+231 230 229 228 227 226 225 224 223 222 221 220 219 218 217 216 215 214 213 212 211 210 209 208 207 206 205 204 203 202 201 200 199 198 197 196 195 194 193 192 191 190 189 188 187 186 185 184 183 182 181 180 179 178 177 176 175 174 173 172 171 170 169 168 167 166 165 164 163 162 161 160 159 158 157 156 155 154 153 152 151 150 149 148 147 146 145 144 143 142 141 140 139 138 137 136 135 134 133 132 131 130 129 128 127 126 125 124 123  
+
+***Input4:***  
+1234 1234  
+***Output4:***  
+1234
+
+# Write your code here using while loop
+a,b=map(int,input().split())
+i=b
+while(i>=a):
+    print(i, end = ' ')
+    i=i-1
+
+# Write your code here using for loop
+a,b=map(int,input().split())
+i=b
+for i in range(b,a-1,-1):
+    print(i, end=' ')
+    
+
+## Exercise 5
+
+**Take two numbers from user A and B respectively. And print**
+- n
+- sqaure of n ($n^2$)
+- cube of n ($n^3$)
+- where A < n < B
+
+In other words **print the NUMBER, SQUARE OF NUMBER and CUBE OF NUMBER for EVERY NUMBER from A to B (Both Exclusive)**. See the sample inputs for a better understanding.
+
+- It is guaranteed that $ A < B$ and $ B - A \geq 2 $
+
+**Sample I/O**  
+
+***Input1:***  
+2 7  
+***Output1:***  
+3 9 27  
+4 16 64  
+5 25 125  
+6 36 216  
+
+***Input2:***  
+13 21  
+***Output2:***  
+14 196 2744  
+15 225 3375  
+16 256 4096  
+17 289 4913  
+18 324 5832  
+19 361 6859  
+20 400 8000   
+
+***Input3:***  
+79  81  
+***Output3:***  
+80 6400 512000  
+
+***Input4:***  
+1723 1745  
+***Output4:***  
+1724 2972176 5124031424  
+1725 2975625 5132953125  
+1726 2979076 5141885176  
+1727 2982529 5150827583  
+1728 2985984 5159780352  
+1729 2989441 5168743489  
+1730 2992900 5177717000  
+1731 2996361 5186700891  
+1732 2999824 5195695168  
+1733 3003289 5204699837  
+1734 3006756 5213714904  
+1735 3010225 5222740375  
+1736 3013696 5231776256  
+1737 3017169 5240822553  
+1738 3020644 5249879272  
+1739 3024121 5258946419  
+1740 3027600 5268024000  
+1741 3031081 5277112021  
+1742 3034564 5286210488  
+1743 3038049 5295319407  
+1744 3041536 5304438784  
+
+# Write your code here using while loop
+a,b=map(int,input().split())
+
+while(
+
+# Write your code here using for loop
+a,b=map(int,input().split())
+for a in range(a+1,b):
+    print(a,a*a,a*a*a)
+    
+
+## Exercise 6
+
+**Print the *MULTIPLICATION TABLE OF THE GIVEN NUMBER N* upto 12 terms (starting from 1)**.
+
+**Sample I/O**  
+
+***Input1:***  
+5<br>
+***Output1:***  
+5 x 1 = 5  
+5 x 2 = 10  
+5 x 3 = 15  
+5 x 4 = 20  
+5 x 5 = 25  
+5 x 6 = 30  
+5 x 7 = 35  
+5 x 8 = 40  
+5 x 9 = 45  
+5 x 10 = 50  
+5 x 11 = 55  
+5 x 12 = 60  
+
+***Input2:***  
+149  
+***Output2:***  
+149 x 1 = 149  
+149 x 2 = 298  
+149 x 3 = 447  
+149 x 4 = 596  
+149 x 5 = 745  
+149 x 6 = 894  
+149 x 7 = 1043  
+149 x 8 = 1192  
+149 x 9 = 1341  
+149 x 10 = 1490  
+149 x 11 = 1639  
+149 x 12 = 1788    
+
+***Input3:***  
+16  
+***Output3:***  
+16 x 1 = 16  
+16 x 2 = 32  
+16 x 3 = 48  
+16 x 4 = 64  
+16 x 5 = 80  
+16 x 6 = 96  
+16 x 7 = 112  
+16 x 8 = 128  
+16 x 9 = 144  
+16 x 10 = 160  
+16 x 11 = 176  
+16 x 12 = 192    
+
+***Input4:***  
+57  
+***Output4:***  
+57 x 1 = 57  
+57 x 2 = 114  
+57 x 3 = 171  
+57 x 4 = 228  
+57 x 5 = 285  
+57 x 6 = 342  
+57 x 7 = 399  
+57 x 8 = 456  
+57 x 9 = 513  
+57 x 10 = 570  
+57 x 11 = 627  
+57 x 12 = 684    
+
+# Write your code here using while loop
+n=int(input())
+i=1
+while i<=12:
+    a=n*i
+    print(n ,"X" ,i, "=", a)
+    i=i+1
+
+# Write your code here using for loop
+n=int(input())
+i=1
+for i in range(i,13):
+    print(n," X", i," = ",n*i)
+
+## Exercise 7
+
+**Print the MULTIPLICATION TABLE OF A GIVEN NUMBER N UPTO R TERMS (starting from 1)**
+
+**Sample I/O**  
+
+***Input1:***  
+5 10  
+***Output1:***  
+5 x 1 = 5  
+5 x 2 = 10  
+5 x 3 = 15  
+5 x 4 = 20  
+5 x 5 = 25  
+5 x 6 = 30  
+5 x 7 = 35  
+5 x 8 = 40  
+5 x 9 = 45  
+5 x 10 = 50   
+
+***Input2:***  
+12 24  
+***Output2:***  
+12 x 1 = 12  
+12 x 2 = 24  
+12 x 3 = 36  
+12 x 4 = 48  
+12 x 5 = 60  
+12 x 6 = 72  
+12 x 7 = 84  
+12 x 8 = 96  
+12 x 9 = 108  
+12 x 10 = 120  
+12 x 11 = 132  
+12 x 12 = 144  
+12 x 13 = 156  
+12 x 14 = 168  
+12 x 15 = 180  
+12 x 16 = 192  
+12 x 17 = 204  
+12 x 18 = 216  
+12 x 19 = 228  
+12 x 20 = 240  
+12 x 21 = 252  
+12 x 22 = 264  
+12 x 23 = 276  
+12 x 24 = 288    
+
+***Input3:***  
+179 17  
+***Output3:***  
+179 x 1 = 179  
+179 x 2 = 358  
+179 x 3 = 537  
+179 x 4 = 716  
+179 x 5 = 895  
+179 x 6 = 1074  
+179 x 7 = 1253  
+179 x 8 = 1432  
+179 x 9 = 1611  
+179 x 10 = 1790  
+179 x 11 = 1969  
+179 x 12 = 2148  
+179 x 13 = 2327  
+179 x 14 = 2506  
+179 x 15 = 2685  
+179 x 16 = 2864  
+179 x 17 = 3043    
+
+***Input4:***  
+97 7   
+***Output4:***  
+97 x 1 = 97  
+97 x 2 = 194  
+97 x 3 = 291  
+97 x 4 = 388  
+97 x 5 = 485  
+97 x 6 = 582  
+97 x 7 = 679    
+
+# Write your code here using while loop
+n,u=map(int,input().split())
+i=1
+while i<=u:
+    print("%d X %d = %d" %(n,i,n*i))
+    i=i+1
+
+# Write your code here using for loop
+n,u=map(int,input().split())
+i=1
+for i in range(i,u+1):
+    print("%d X %d = %d" %(n,i,n*i))
+
+## Exercise 8
+
+You'll be given three numbers **N, A and B**. Print the **MULTIPLICATION TABLE OF NUMBER N FROM A TO B (Both inclusive)**.  
+Refer to the sample I/O for more clarity.  
+
+- It is guaranteed that $ A < B $
+
+**Sample I/O**  
+
+***Input1:***  
+7 14 21  
+***Output1:***  
+7 x 14 = 98  
+7 x 15 = 105  
+7 x 16 = 112  
+7 x 17 = 119  
+7 x 18 = 126  
+7 x 19 = 133  
+7 x 20 = 140  
+7 x 21 = 147      
+
+***Input2:***  
+291 421 435  
+***Output2:***  
+291 x 421 = 122511  
+291 x 422 = 122802  
+291 x 423 = 123093  
+291 x 424 = 123384  
+291 x 425 = 123675  
+291 x 426 = 123966  
+291 x 427 = 124257  
+291 x 428 = 124548  
+291 x 429 = 124839  
+291 x 430 = 125130  
+291 x 431 = 125421  
+291 x 432 = 125712  
+291 x 433 = 126003  
+291 x 434 = 126294  
+291 x 435 = 126585    
+
+***Input3:***  
+16 71 77  
+***Output3:***  
+16 x 71 = 1136  
+16 x 72 = 1152  
+16 x 73 = 1168  
+16 x 74 = 1184  
+16 x 75 = 1200  
+16 x 76 = 1216  
+16 x 77 = 1232    
+
+***Input4:***  
+19 12 15  
+***Output4:***  
+19 x 12 = 228  
+19 x 13 = 247  
+19 x 14 = 266  
+19 x 15 = 285    
+
+# Write your code here using while loop
+n,l,u=map(int,input().split())
+while l<=u:
+    print("%d X %d = %d" %(n,l,n*l))
+    l=l+1
+
+# Write your code here using for loop
+n,l,u=map(int,input().split())
+for l in range(l,u+1):
+    print("%d X %d = %d"%(n,l,n*l))
+
+## Exercise 9
+
+You'll be given three numbers **X, Y and Z**. Print the all the numbers from **X** to **Y** (inclusive) with a difference of **Z**.
+
+
+- It's guaranteed that **X < Y**
+- See the Sample I/O for more clarity.
+
+**Sample I/O**  
+
+***Input1:***  
+10 100 12  
+***Output1:***  
+10 22 34 46 58 70 82 94  
+
+***Input2:***  
+100 2100 500  
+***Output2:***  
+100 600 1100 1600 2100  
+
+***Input3:***  
+2000 3000 700  
+***Output3:***  
+2000 2700  
+
+***Input4:***  
+1234 2443 347     
+***Output4:***  
+1234 1581 1928 2275  
+
+# Write your code here using while loop
+a,b,c=map(int,input().split())
+while a<=b:
+    print(a, end=' ')
+    a=a+c
+
+# Write your code here using for loop
+a,b,c=map(int,input().split())
+for a in range(a,b,c):
+    print(a,end=' ')
+
+## Exercise 10
+
+You'll be given three numbers **X, Y and Z**. Print the all the numbers from **Y** to **X** (inclusive) with a difference of **Z**.
+
+
+- It's guaranteed that **X < Y**
+- See the Sample I/O for more clarity.
+
+**Sample I/O**  
+
+***Input1:***  
+10 100 12  
+***Output1:***  
+100 88 76 64 52 40 28 16  
+
+***Input2:***  
+100 2100 500   
+***Output2:***  
+2100 1600 1100 600 100  
+
+***Input3:***  
+2000 3000 700  
+***Output3:***  
+3000 2300  
+
+***Input4:***  
+1234 2443 347  
+***Output4:***  
+2443 2096 1749 1402  
+
+# Write your code here using while loop
+a,b,c=map(int,input().split())
+while b>=a:
+    print(b,end=' ')
+    b=b-c
+
+# Write your code here using for loop
+a,b,c=map(int,input().split())
+for i in range(b,a,-c):
+    print(i,end=' ')
+
+## Exercise 11
+
+Write a program to print **users' name N times**
+
+**Sample I/O**  
+
+***Input1:***  
+Vikarm  
+20  
+***Output1:***  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+Vikram  
+
+***Input2:***  
+Rolex  
+7<br>
+***Output2:***  
+Rolex  
+Rolex  
+Rolex  
+Rolex  
+Rolex  
+Rolex  
+Rolex    
+
+***Input3:***  
+Delhi  
+10  
+***Output3:***  
+Delhi  
+Delhi  
+Delhi  
+Delhi  
+Delhi  
+Delhi  
+Delhi  
+Delhi  
+Delhi  
+Delhi    
+
+***Input1:***  
+Tina  
+12  
+***Output1:***  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+Tina  
+
+# Write your code here using while loop
+a=input()
+b=int(input())
+while b!=0:
+    print(a)
+    b=b-1
+
+# Write your code here using for loop
+a=input()
+b=int(input())
+for i in range(1,b+1):
+    print(a)
