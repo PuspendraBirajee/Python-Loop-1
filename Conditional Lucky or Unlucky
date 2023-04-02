@@ -1,0 +1,57 @@
+Kaprekar calls a number X Lucky, if and only if it is divisible by exactly two of the given three integers A, B and C.
+
+Given X, A, B and C, help Kaprekar determine if X is Lucky or Not.
+
+If X is Lucky
+
+Print Lucky
+And also print the 2 numbers that divide X
+Ohterwise
+
+Print Unlucky
+Sample I/O
+
+Input1:
+12 3 4 6
+Output1:
+UNLUCKY
+
+Input2:
+16 8 7 4
+Output2:
+LUCKY
+8 4
+
+Input3:
+51 3 17 20
+Output3:
+LUCKY
+3 17
+
+Input4:
+64 3 4 5
+Output4:
+UNLUCKY
+
+Input5:
+120 61 20 40
+Output5:
+LUCKY
+20 40
+
+# Write your code here
+x,a,b,c=map(int,input().split())
+if x%a==0 and x%b==0:
+    print("LUCKY")
+    print("%d %d"%(a,b))
+elif x%a==0 and x%c==0:
+    print("LUCKY")
+    print("%d %d"%(a,c))
+elif x%b==0 and x%c==0:
+        print("LUCKY")
+        print("%d %d"%(b,c))
+else:
+    print("UNLUCKY")
+120 61 20 40
+LUCKY
+20 40
