@@ -1,0 +1,135 @@
+Electricty Bill
+
+You have to calculate the monthly Electricity Bill of a customer based on No. of Units U consumed.
+
+Rupees per unit vary depending upon the unit consumption.
+
+Here is the detailed cost_per_unit for different unit consumptions.
+
+Unit consumption	Cost per Unit
+Upto 199	1.20
+>=200 but <400	1.40
+>=400 but <600	1.60
+>=600 but <800	1.80
+>=800	2.00
+Also if bill exceeds Rs. 400 a surcharge of 15% of the bill amount should be charged.
+Sample I/O
+
+Input1:
+800
+Output1:
+Units Consumed: 800
+Cost per Unit: 2.00
+Bill: 1600.00
+Surcharge: 240.00
+Total Amount: 1840.00
+
+Input2:
+250
+Output2:
+Units Consumed: 250
+Cost per Unit: 1.40
+Bill: 350.00
+Surcharge: 0.00
+Total Amount: 350.00
+
+Input3:
+500
+Output3:
+Units Consumed: 500
+Cost per Unit: 1.60
+Bill: 800.00
+Surcharge: 120.00
+Total Amount: 920.00
+
+Input4:
+100
+Output4:
+Units Consumed: 100
+Cost per Unit: 1.20
+Bill: 120.00
+Surcharge: 0.00
+Total Amount: 120.00
+
+Input5:
+650
+Output5:
+Units Consumed: 650
+Cost per Unit: 1.80
+Bill: 1170.00
+Surcharge: 175.50
+Total Amount: 1345.50
+
+# Write your code here
+u=int(input())
+if u<=199:
+    b=u*1.20
+    print("Units Consumed: %d"%u)
+    print("Cost per Unit: 1.20")
+    print("Bill: %.2f"%b)
+    if b>400:
+        s=0.15*b
+        t=b+s
+        print("Surcharge: %.2f"%s)
+        print("Total Amount: %.2f"%t)
+    else:
+        print("Surcharge: 0.00")
+        print("Total Amount: %.2f"%b)
+elif u<400:
+    b=u*1.40
+    print("Units Consumed: %d"%u)
+    print("Cost per Unit: 1.40")
+    print("Bill: %.2f"%b)
+    if b>400:
+        s=0.15*b
+        t=b+s
+        print("Surcharge: %.2f"%s)
+        print("Total Amount: %.2f"%t)
+    else:
+        print("Surcharge: 0.00")
+        print("Total Amount: %.2f"%b)
+elif u<=599:
+    b=u*1.60
+    print("Units Consumed: %d"%u)
+    print("Cost per Unit: 1.60")
+    print("Bill: %.2f"%b)
+    if b>400:
+        s=0.15*b
+        t=b+s
+        print("Surcharge: %.2f"%s)
+        print("Total Amount: %.2f"%t)
+    else:
+        print("Surcharge: 0.00")
+        print("Total Amount: %.2f"%b)
+elif u<=799:
+    b=u*1.80
+    print("Units Consumed: %d"%u)
+    print("Cost per Unit: 1.80")
+    print("Bill: %.2f"%b)
+    if b>400:
+        s=0.15*b
+        t=b+s
+        print("Surcharge: %.2f"%s)
+        print("Total Amount: %.2f"%t)
+    else:
+        print("Surcharge: 0.00")
+        print("Total Amount: %.2f"%b)
+if u>=800:
+    b=u*2.00
+    print("Units Consumed: %d"%u)
+    print("Cost per Unit: 2.00")
+    print("Bill: %.2f"%b)
+    if b>400:
+        s=0.15*b
+        t=b+s
+        print("Surcharge: %.2f"%s)
+        print("Total Amount: %.2f"%t)
+    else:
+        print("Surcharge: 0.00")
+        print("Total Amount: %.2f"%b)
+650
+Units Consumed: 650
+Cost per Unit: 1.80
+Bill: 1170.00
+Surcharge: 175.50
+Total Amount: 1345.50
