@@ -1,0 +1,38 @@
+Mario transforms each time he eats a mushroom as follows:
+
+If he is currently small, he turns normal.
+If he is currently normal, he turns huge.
+If he is currently huge, he turns small.
+Given that Mario was initially normal, find his size after eating X mushrooms.
+
+Sample I/O
+
+Input1:
+2
+Output1:
+SMALL
+
+Input2:
+4
+Output2:
+HUGE
+
+Input3:
+12
+Output3:
+NORMAL
+
+Input4:
+17
+Output4:
+SMALL
+
+:
+# Write your code here
+m=int(input())
+if m%3==1:
+    print("HUGE")
+elif m%3==2:
+    print("SMALL")
+else:
+    print("NORMAL")
