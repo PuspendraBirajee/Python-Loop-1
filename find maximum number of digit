@@ -1,0 +1,8 @@
+s=9456
+max=0
+while s>0:
+    rem=s%10
+    s=s//10
+    if rem>max:
+        max=rem
+print(max)
