@@ -1,0 +1,4 @@
+import math
+x=(math.asin(0.7071))
+print(x)
+print(math.degrees(x))
