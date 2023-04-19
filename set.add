@@ -1,0 +1,7 @@
+help(set.add)
+Help on method_descriptor:
+
+add(...)
+    Add an element to a set.
+    
+    This has no effect if the element is already present.
