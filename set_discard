@@ -1,0 +1,7 @@
+help(set.discard)
+Help on method_descriptor:
+
+discard(...)
+    Remove an element from a set if it is a member.
+    
+    If the element is not a member, do nothing.
