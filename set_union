@@ -1,0 +1,7 @@
+help(set.union)
+Help on method_descriptor:
+
+union(...)
+    Return the union of sets as a new set.
+    
+    (i.e. all elements that are in either set.)
