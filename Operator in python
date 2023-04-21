@@ -1,0 +1,41 @@
+#length,breadth=map(int,input().split())
+#area=length*breadth
+#peri=2*(length+breadth)
+#print("The area of a rectangle with" ,length, "length and" ,breadth, "breadth is" ,area)
+#print("The perimeter of a rectangle with" ,length, "length and" ,breadth, "breadth is" ,peri)
+# rule 1
+num1=10  # valid
+ #  1stnum=10  invalid
+print(num1) 
+#  print(1stnum)
+
+#  Rule 2
+# first name=12
+first_name=12
+# print(first name)
+print(first_name)
+
+# Rule 3
+
+#  ----> do not use any function name as variable eg. int, sum, float etc.
+
+#operators in python
+1.Arithmetic operators
+ +,-,*,/,%-->5 standard arithmetic operators
+//--> floor division/integer division
+       Rounds down the actual quotient(100/16-->6.25)
+       (-11/2-->-5.5) to nearest integer possible(100//16-->6)(-11//2--> -6)
+       6.25,-5.5 are actual quotient and 6,-6 are nearest integer possible
+**--> Exponentiation
+     a**b--> a power b
+     2**4-->16
+     7**3-->343
+----------------------------------------------
+total 7 arithmetic operators 
+
+2.Relational or Comparison operators
+3.Logical operators
+4.Assignment operators
+5.Bitwise operators
+6. Membership operators
+7. Identity operators
