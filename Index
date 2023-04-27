@@ -1,0 +1,2 @@
+p='pushu'
+print(p[3])
